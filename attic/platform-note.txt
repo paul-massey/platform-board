@@ -1,0 +1,3 @@
+PLANTED: this file deliberately sits outside docs/REPO-MAP.md.
+It gives the repository map check an unmapped file to find.
+The app never reads it.

@@ -1,0 +1,5 @@
+{
+  "purpose": "PLANTED fake-key fixture for the Vibe Coding secrets check, never imported",
+  "apiKey": "sk-test-PLANTED-not-a-real-key",
+  "isRealCredential": false
+}

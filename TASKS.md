@@ -1,0 +1,4 @@
+# Agent tasks
+
+- [ ] **Claude Code: fix the clock being an hour out when summer time ends.** The station clock in `src/clock.ts` currently assumes UTC+1 all year. Use the `Europe/London` time zone so the clock follows summer time and winter time. Acceptance: on 25 October 2026, `00:30Z` displays `01:30` and `01:30Z` also displays `01:30`; a July instant still displays the correct BST time. Add a regression test and keep the deliberately planted failing test unchanged.
+- [ ] **Codex: add a 12 or 24 hour clock setting.** The station clock currently uses 24 hour time only. Add a visible, labelled setting, remember it on this device, and apply it to the station clock. Acceptance: the same afternoon instant displays `14:05` in 24 hour mode and `2:05 pm` in 12 hour mode; the selected mode survives a reload. Keep departure times clear and the deliberately planted failing test unchanged.
